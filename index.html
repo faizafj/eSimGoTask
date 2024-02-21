@@ -7,32 +7,28 @@
     <title>eSims</title>
     <link rel="stylesheet" href="styling/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="index.js"> </script>
 </head>
 
 <!-- Header and Navigation Bar -->
-
-<div class="header_container">
+<header class="header_container">
     <img id="header_image" src="images/usa_captiol.png">
-
     <h1 id="header_title"> United States of America Travel Bundle</h1>
-
-    <header class="navigation_bar">
+    <nav class="navigation_bar">
         <div class="navigation_page_information">
-            <img id="navigation_page_image" src="images/e_sim.png">
-            <a id="navigation_page_title"> eSIMs </a>
+            <img id="navigation_website_logo" src="images/e_sim.png">
+            <a id="navigation_website_title"> eSIMs </a>
         </div>
 
         <div id="navigation_links_container">
-            <a id="navigation_link"> About Us</a>
-            <a id="navigation_link"> Device Compatibility </a>
-            <a id="navigation_link"> FAQs & Support </a>
-            <a id="navigation_link"> Login </a>
+            <a id="navigation_link" href="#"> About Us </a>
+            <a id="navigation_link" href="#"> Device Compatibility </a>
+            <a id="navigation_link" href="#"> FAQs & Support </a>
+            <a id="navigation_link" href="#"> Login </a>
 
 
         </div>
-        <div class="currency_options">
-            <select id="navigation_link" name="currency">
+        <div class="navigation_selection" onchange="get_currency()" >
+            <select id="currency_options" name="currency">
                 <option value="gbp">GBP £</option>
                 <option value="eur">EUR €</option>
                 <option value="usd">USD $</option>
@@ -40,21 +36,58 @@
             </select>
         </div>
 
-        <div class="language_options">
-            <select id="navigation_link" name="language">
+        <div class="navigation_selection">
+            <select id="language_options" name="language">
                 <option value="English">English</option>
                 <option value="French">Français</option>
                 <option value="Spanish">Español</option>
                 <option value="German">Deutsch</option>
             </select>
         </div>
-    </header>
-</div>
+    </nav>
+</header>
 
-
+<!-- Main Page Content -->
 
 <body>
 
+    <article class="main_page_content">
+        <div class="new_esim_information">
+            <h1 id="new_esim"> Bundles purchased will be applied to new eSims.</h1>
+            <a id="top_up_esim" href="#"> Top-up an eSim instead</a>
+        </div>
+
+        <div class="bundle_details_information">
+            <h1 id="bundle_detail_title"> Bundle Details</h1>
+            <p id="number_of_countries"> Top-up an eSim instead</p>
+        </div>
+
+
+        <article id="bundles_container">
+
+        </article>
+
+        <div class="bundle_details_information">
+            <h1 id="bundle_detail_title"> Compatibility</h1>
+            <p id="bundle_detail_description"> Check the <a href="#" id="embedded_text_link"> compatible devices</a>
+                list to make sure your device is eSIM ready.
+                Your device must be unlocked to add an eSIM. </p>
+        </div>
+        <div class="bundle_details_information">
+            <h1 id="bundle_detail_title"> Installation </h1>
+            <p id="bundle_detail_description"> Installing an SIM is simple. Once your purchase is complete, we will
+                email instructions on how to install and activate your eSIM. You can use your bundle up to 12 months
+                from its purchase date.</p>
+        </div>
+    </article>
+
+    <article id="total_price_footer">
+        <p> Total price </p>
+    </article>
 </body>
+
+<footer id="details_footer">
+</footer>
+<script src="javascript/index.js"> </script>
 
 </html>

@@ -1,6 +1,6 @@
 /* Whole HTML Body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     margin: 0;
 }
 
@@ -8,7 +8,7 @@ body {
 /* Header and header Image */
 .header_container {
     position: relative;
-    height: 300px;
+    height: 250px;
 }
 
 #header_image {
@@ -16,14 +16,14 @@ body {
     height: 100%;
     display: block;
     object-fit: cover;
-    border-radius: 0 0 150px 25px ;
+    border-radius: 0 0 150px 20px;
 }
 
-#header_title{
+#header_title {
     color: white;
     position: absolute;
     top: 40%;
-    left:30%;
+    left: 30%;
 }
 
 /* Navigation Bar */
@@ -44,19 +44,18 @@ body {
 }
 
 .navigation_page_information {
-    float: left;
     display: flex;
     align-items: center;
     margin-right: 10%;
 }
 
-#navigation_page_image {
+#navigation_website_logo {
     width: 25px;
     height: 25px;
     padding: 5px;
 }
 
-#navigation_page_title {
+#navigation_website_title {
     color: white;
     font-size: 20px;
     padding: 5px;
@@ -64,6 +63,21 @@ body {
 }
 
 .navigation_bar #navigation_link {
+    color: white;
+    margin: 5px;
+    border-right: solid white 0.5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    text-align: center;
+    justify-self: center;
+}
+
+.navigation_bar #navigation_link:hover {
+    color: black;
+}
+
+.navigation_bar #navigation_selection {
     color: white;
     margin: 5px;
     border-right: solid white 0.5px;
@@ -85,4 +99,136 @@ body {
     color: white;
     font-size: 15px;
     text-align: center;
+    border-right: solid white 0.5px;
+}
+
+.navigation_bar select:hover {
+    color: black;
+}
+
+/* main content */
+.main_page_content {
+    display: grid;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 25px;
+}
+
+
+/* Bundle information */
+.new_esim_information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #008BD1;
+    margin: 10px;
+}
+
+#new_esim {
+    text-align: left;
+    font-size: 12px;
+}
+
+#top_up_esim {
+    text-decoration: none;
+    text-align: right;
+    color: #008BD1;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#bundle_detail_title,
+#bundle_detail_description {
+    margin-left: 10px;
+}
+
+#bundle_detail_title {
+    margin-bottom: 0;
+}
+
+#bundle_detail_description {
+    margin-top: 7px;
+}
+
+#embedded_text_link {
+    text-decoration: none;
+    color: #008BD1;
+}
+
+
+/* Bundle Pricing Details */
+#main_bundles_available_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#bundle_recommendation {
+    margin: 10px;
+    margin-top: 0;
+    color: white;
+    background-color: #008BD1;
+    border-radius: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+#recommended_bundles_details{
+    border: 1px solid #008BD1;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: 0;
+    background-color: white;
+}
+
+
+#bundles_details {
+    border: 1px solid #008BD1;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 0;
+    background-color: white;
+
+}
+
+#bundle_size,
+#bundle_price {
+    margin: 10px;
+    color: #008BD1;
+}
+
+#bundle_size {
+    font-size: 15px;
+}
+
+#bundle_price {
+    font-size: 20px;
+}
+
+#bundle_duration {
+    font-size: 15px;
+    color: #464646;
+    position: relative;
+}
+
+/* #bundle_recommendation_outer_container{
+    border: 1px solid #008BD1;
+}
+
+#bundle_recommendation_container{
+    border: 1px solid #008BD1;
+} */
+
+
+/* User prices footer */
+#total_price_footer {
+    border: solid 1px lightgray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 2px 2px 0px;
+    background-color: white;
 }
