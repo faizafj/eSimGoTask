@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eSims</title>
     <link rel="stylesheet" href="styling/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <!-- Header and Navigation Bar -->
@@ -15,7 +19,8 @@
     <h1 id="header_title"> United States of America Travel Bundle</h1>
     <nav class="navigation_bar">
         <div class="navigation_page_information">
-            <img id="navigation_website_logo" src="images/e_sim.png">
+            <span id="navigation_website_logo" class="material-symbols-outlined" style="color:white; margin:0px;">
+                sim_card </span>
             <a id="navigation_website_title"> eSIMs </a>
         </div>
 
@@ -27,7 +32,7 @@
 
 
         </div>
-        <div class="navigation_selection" onchange="get_currency()" >
+        <div class="navigation_selection" onchange="get_currency()">
             <select id="currency_options" name="currency">
                 <option value="gbp">GBP £</option>
                 <option value="eur">EUR €</option>
@@ -86,7 +91,55 @@
     </article>
 </body>
 
-<footer id="details_footer">
+<footer>
+    <div class="footer_section_one">
+        <div id="footer_section_one_column">
+            <div id="footer_website_logo_container">
+                <a id="footer_website_logo" class="material-symbols-outlined"> sim_card </a>
+                <a id="footer_website_title"> eSIMs </a>
+            </div>
+
+            <p> eSIMs provide affordable, easy to use travel bundles for SIM in over 180
+                countries worldwide. </p>
+            <div id="footer_socials_bar">
+                <a href="#" class="devicon-facebook-plain"></a>
+                <a href="#" class="fa fa-twitter" style="font-size:25px;margin-left: 5px; margin-right: 5px;"></a>
+                <a href="#" class="devicon-linkedin-plain"></a>
+                <a href="#" class="fa fa-youtube-play" style="font-size:25px;margin-left: 5px; margin-right: 5px;"></a>
+            </div>
+        </div>
+        <div id="footer_section_one_column">
+            <h1 id="footer_links_heading">Shop</h1>
+            <a id="footer_links" href="#">Most Popular eSIM </a>
+            <a id="footer_links" href="#">Shop eSIM by Region</a>
+            <a id="footer_links" href="#">Shop SIM by Country</a>
+        </div>
+        <div id="footer_section_one_column">
+            <h1 id="footer_links_heading">Info </h1>
+            <a id="footer_links" href="#">About Us </a>
+            <a id="footer_links" href="#">Frequently Asked Questions</a>
+            <a id="footer_links" href="#">Compatible Devices</a>
+            <a id="footer_links" href="#">Become an affiliate</a>
+        </div>
+        <div id="footer_section_one_column">
+            <h1 id="footer_links_heading">Contact Us </h1>
+            <a id="footer_links" href="#">Support</a>
+            <br>
+            <a id="footer_links" href="#">Sales and Partner Enquiries</a>
+        </div>
+    </div>
+    <div class="footer_section_two">
+        <div id="footer_section_two_column">
+            <p> Copyright SIMs 2024 </p>
+        </div>
+
+        <div id="footer_section_two_column_links_container">
+            <a id="footer_section_two_links" href="#">Terms and Conditions</a>
+            <a id="footer_section_two_links" href="#">Privacy Policy</a>
+            <a id="footer_section_two_links" href="#">Complaints Policy</a>
+        </div>
+    </div>
+
 </footer>
 <script src="javascript/index.js"> </script>
 
