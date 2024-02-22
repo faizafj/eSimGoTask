@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <!-- Header and Navigation Bar -->
@@ -32,7 +35,7 @@
 
 
         </div>
-        <div class="navigation_selection" onchange="get_currency()">
+        <div class="navigation_selection" onchange="change_currency(event)">
             <select id="currency_options" name="currency">
                 <option value="gbp">GBP £</option>
                 <option value="eur">EUR €</option>
@@ -64,9 +67,14 @@
 
         <div class="bundle_details_information">
             <h1 id="bundle_detail_title"> Bundle Details</h1>
-            <p id="number_of_countries"> Top-up an eSim instead</p>
+            <p id="number_of_countries"> The United States of America Travel Bundle works in 1 country and is available
+                in a range of data sizes.</p>
         </div>
 
+        <div class="bundle_details_information">
+            <h1 id="bundle_detail_title"> Bundle Options </h1>
+            <p id="number_of_countries"> Select one of the following bundle sizes:</p>
+        </div>
 
         <article id="bundles_container">
 
@@ -80,17 +88,38 @@
         </div>
         <div class="bundle_details_information">
             <h1 id="bundle_detail_title"> Installation </h1>
-            <p id="bundle_detail_description"> Installing an SIM is simple. Once your purchase is complete, we will
+            <p id="bundle_detail_description"> Installing an eSIM is simple. Once your purchase is complete, we will
                 email instructions on how to install and activate your eSIM. You can use your bundle up to 12 months
                 from its purchase date.</p>
         </div>
     </article>
-
-    <article id="total_price_footer">
-        <p> Total price </p>
+    <!-- Bundle selected pricing footer  -->
+    <article class="total_price_footer_container">
+        <article id="total_price_footer">
+            <div id="total_price_footer_left">
+                <p id="current_selection"> Currently selected: </p>
+                <p id="current_selection_sim_details"> 1GB 7 Day Bundle</p>
+            </div>
+            <div id="total_price_footer_right">
+                <button id="buy_now_button"> £6.00 Buy Now </button>
+            </div>
+    
+        </article>
     </article>
-</body>
+    
 
+    <!-- Frequently Asked Questions  -->
+    <article class="frequently_asked_questions">
+        <h1 id="frequently_asked_questions_title"> Frequently Asked Questions </h1>
+        <article id="frequently_asked_questions_grid_container">
+
+        </article>
+
+    </article>
+
+
+</body>
+<!-- Footer -->
 <footer>
     <div class="footer_section_one">
         <div id="footer_section_one_column">
@@ -130,7 +159,7 @@
     </div>
     <div class="footer_section_two">
         <div id="footer_section_two_column">
-            <p> Copyright SIMs 2024 </p>
+            <p> Copyright eSIMs 2024 </p>
         </div>
 
         <div id="footer_section_two_column_links_container">
@@ -140,7 +169,14 @@
         </div>
     </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+
+
 </footer>
-<script src="javascript/index.js"> </script>
+<script src="javascript/sim_bundles.js"> </script>
+<script src="javascript/frequently_asked_questions.js"> </script>
 
 </html>
