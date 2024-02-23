@@ -82,6 +82,7 @@ function display_questions() {
 
         //eventlistener function to display and hide answers
         questions_title_container.addEventListener("click", display_answer);
+        questions_title_container.style.userSelect="none" //Prevents users from copying/highlighting text
 
     }
     //Adds the View More FAQs link

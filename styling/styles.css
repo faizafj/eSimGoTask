@@ -4,6 +4,8 @@ body {
     margin: 0;
 }
 
+
+
 /* Header and header Image */
 .header_container {
     position: relative;
@@ -16,6 +18,7 @@ body {
     display: block;
     object-fit: cover;
     border-radius: 0 0 150px 20px;
+    filter: contrast(0.5);
 }
 
 #header_title {
@@ -53,6 +56,9 @@ body {
     height: 25px;
     padding: 5px;
 }
+.fa-caret-down::before{
+    font-size: 11px;
+}
 
 #navigation_website_title {
     color: white;
@@ -75,7 +81,7 @@ body {
     color: black;
 }
 
-.navigation_bar #navigation_selection:last-child {
+.navigation_bar #navigation_link_button:last-child {
     border-right: none;
 }
 
@@ -85,6 +91,7 @@ body {
     padding-right: 10px;
     padding-left: 10px;
 }
+
 
 
 
@@ -108,6 +115,54 @@ body {
 .navigation_bar select:hover {
     color: black;
 }
+
+/* Navigation Drop Down Options */
+
+
+#navigation_link_button{
+    color: white;
+    border: none;
+    border-right: solid white 0.5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    text-align: center;
+    justify-self: center;
+    font-size: 15px;
+    background-color: transparent;
+}
+.navigation_drop_down {
+    overflow: hidden;
+}
+
+.navigation_drop_down_container{
+    display: none;
+    position: fixed;
+    background-color: white;
+    width: max-content;
+    height: max-content;
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 1px;
+}
+
+.navigation_drop_down_container #navigation_dropdown_links {
+    border: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    background-color: transparent;
+}
+.navigation_drop_down #navigation_dropdown_links:hover {
+    color:#008BD1;
+
+}
+
+.navigation_drop_down:hover .navigation_drop_down_container {
+    display: block;
+}
+
 
 /* main content */
 .main_page_content {
@@ -167,12 +222,14 @@ body {
     color: #008BD1;
 }
 
+
+
 /* Bundle Pricing Details */
 #main_bundles_available_container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
-    color=#008BD1;
+    color:#008BD1;
 }
 
 #bundles_container {
@@ -223,17 +280,29 @@ body {
     background-color: #F0F9FC;
 }
 
-.bundle_size,
-.bundle_price {
-    margin: 10px;
+
+.fa-database{
     color: #008BD1;
+    margin: 0;
+    padding:0;
+    font-size: 15px;
+}
+#bundle_size_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
 .bundle_size {
-    font-size: 15px;
+    color: #008BD1;
+    font-size: 18px;
+    margin: 0;
+    margin-left: 5px;
 }
-
 .bundle_price {
+    margin: 10px;
+    color: #008BD1;
     font-size: 23px;
 }
 
