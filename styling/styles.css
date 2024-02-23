@@ -1,7 +1,8 @@
 /* Whole HTML Body */
 body {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
+    font-size: 15px;
 }
 
 
@@ -32,23 +33,25 @@ body {
 .navigation_bar {
     background-color: transparent;
     overflow: hidden;
-    padding: 10px;
-    font-size: 15px;
+    padding-right: 10%;
     padding-left: 10%;
+    font-size: 12px;
+    font-weight: bold;
     text-align: center;
     align-items: center;
-    padding-right: 10%;
     display: flex;
     width: 80%;
     position: absolute;
     top: 0;
     left: 0;
+    margin-top: 10px;
 }
 
 .navigation_page_information {
     display: flex;
     align-items: center;
     margin-right: 10%;
+    position: static;
 }
 
 #navigation_website_logo {
@@ -56,7 +59,8 @@ body {
     height: 25px;
     padding: 5px;
 }
-.fa-caret-down::before{
+
+.fa-caret-down {
     font-size: 11px;
 }
 
@@ -70,8 +74,8 @@ body {
 .navigation_bar #navigation_link {
     color: white;
     border-right: solid white 0.5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
     text-decoration: none;
     text-align: center;
     justify-self: center;
@@ -93,10 +97,10 @@ body {
 }
 
 
-
-
 .navigation_bar #navigation_links_container {
-    margin-left: 20%;
+    margin-left: 30%;
+    display: flex;
+
 }
 
 .navigation_bar select {
@@ -119,23 +123,26 @@ body {
 /* Navigation Drop Down Options */
 
 
-#navigation_link_button{
+#navigation_link_button {
     color: white;
     border: none;
     border-right: solid white 0.5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
     text-decoration: none;
     text-align: center;
     justify-self: center;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: bold;
     background-color: transparent;
 }
+
+
 .navigation_drop_down {
     overflow: hidden;
 }
 
-.navigation_drop_down_container{
+.navigation_drop_down_container {
     display: none;
     position: fixed;
     background-color: white;
@@ -154,8 +161,9 @@ body {
     color: black;
     background-color: transparent;
 }
+
 .navigation_drop_down #navigation_dropdown_links:hover {
-    color:#008BD1;
+    color: #008BD1;
 
 }
 
@@ -170,10 +178,19 @@ body {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 
 /* Bundle information */
+.bundle_details_information{
+    margin-bottom: 10px;
+}
+
+.bundle_details_information > h1{
+    margin: 0;
+}
+
 .new_esim_information {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -229,7 +246,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
-    color:#008BD1;
+    color: #008BD1;
 }
 
 #bundles_container {
@@ -238,6 +255,7 @@ body {
     color: rgb(0, 139, 209);
     justify-content: center;
     align-items: self-end;
+    margin-bottom: 10px;
 }
 
 
@@ -276,18 +294,20 @@ body {
 
 }
 
-.bundles_details:hover, .recommended_bundles_details:hover{
+.bundles_details:hover,
+.recommended_bundles_details:hover {
     background-color: #F0F9FC;
 }
 
 
-.fa-database{
+.fa-database {
     color: #008BD1;
     margin: 0;
-    padding:0;
+    padding: 0;
     font-size: 15px;
 }
-#bundle_size_container{
+
+#bundle_size_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,6 +320,7 @@ body {
     margin: 0;
     margin-left: 5px;
 }
+
 .bundle_price {
     margin: 10px;
     color: #008BD1;
@@ -323,7 +344,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    
+
 }
 
 #total_price_footer_left {
@@ -332,13 +353,14 @@ body {
     margin-left: 10px;
 }
 
-.total_price_footer_container{
+.total_price_footer_container {
     width: 100%;
     display: flex;
     bottom: 0;
     position: fixed;
     justify-content: center;
 }
+
 #total_price_footer_right {
     margin-right: 10px;
     display: flex;
@@ -361,7 +383,7 @@ body {
     border: none;
     color: white;
     background-color: #008BD1;
-    background-image: linear-gradient(to bottom right, #008BD1, #00BDE4);
+    background-image: linear-gradient(to right, #008BD1, #00BDE4);
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
@@ -369,24 +391,26 @@ body {
 }
 
 /* Frequently asked questions */
-.frequently_asked_questions{
-    padding: 50px;
+.frequently_asked_questions {
+    padding: 20px;
     padding-left: 13%;
     padding-right: 13%;
     justify-content: center;
     background-color: #FAFAFA;
 }
+
 #frequently_asked_questions_grid_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
 }
 
-#frequently_asked_questions_title{
+#frequently_asked_questions_title {
     text-align: center;
     font-size: 35px;
 }
 
-.questions_title{
+.questions_title {
     border: solid 0.5px #E2E2E2;
     background-color: white;
     border-radius: 12px;
@@ -395,30 +419,36 @@ body {
     font-size: 15px;
 }
 
-#view_more_link_container{
+.fa-chevron-down{
+    float: right;
+    color: #464646;
+}
+
+#view_more_link_container {
     border-radius: 5px;
     margin: 10px;
-    padding: 10px; 
+    padding: 10px;
     font-size: 15px;
 }
 
-#view_more_link{
-    color:#008BD1;
+#view_more_link {
+    color: #008BD1;
     text-decoration: none;
 }
 
-#view_more_link:hover{
+#view_more_link:hover {
     color: black;
 }
 
-.questions_answer{
+.questions_answer {
     border: solid 0.5px #E2E2E2;
     background-color: white;
     border-radius: 5px;
     margin: 10px;
-    padding: 10px; 
+    padding: 10px;
     font-size: 15px;
 }
+
 /* Footer */
 footer {
     background-color: black;

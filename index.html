@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eSims</title>
+    <!-- CSS styling -->
     <link rel="stylesheet" href="styling/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Dev Icons -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/368c044555.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="http://tinyurl.com/39rjsh6h" />
+    <!-- Roboto Font -->
+    <link href="http://tinyurl.com/2bzcnwz5" rel="stylesheet">
 </head>
 
 <!-- Header and Navigation Bar -->
@@ -34,30 +36,30 @@
             <a id="navigation_link" href="#"> Login </a>
 
 
-        </div>
+            <div class="navigation_drop_down">
+                <button class="currency_navigation_link_button" id="navigation_link_button" href="#"> GBP £ <i
+                        class="fa fa-caret-down"> </i></button>
+                <div class="navigation_drop_down_container">
+                    <button id="navigation_dropdown_links" value="gbp" onclick="change_currency(event)">GBP £</button>
+                    <button id="navigation_dropdown_links" value="eur" onclick="change_currency(event)">EUR €</button>
+                    <button id="navigation_dropdown_links" value="usd" onclick="change_currency(event)">USD $</button>
+                    <button id="navigation_dropdown_links" value="aud" onclick="change_currency(event)">AUD $</button>
+                </div>
+            </div>
 
-        <div class="navigation_drop_down">
-            <button class="currency_navigation_link_button" id="navigation_link_button" href="#"> GBP £ <i class="fa fa-caret-down"> </i></button>
-            <div class="navigation_drop_down_container">
-                <button id="navigation_dropdown_links" value="gbp" onclick="change_currency(event)">GBP £</button>
-                <button id="navigation_dropdown_links" value="eur" onclick="change_currency(event)">EUR €</button>
-                <button id="navigation_dropdown_links" value="usd" onclick="change_currency(event)">USD $</button>
-                <button id="navigation_dropdown_links" value="aud" onclick="change_currency(event)">AUD $</button>
+
+            <div class="navigation_drop_down">
+                <button class="language_navigation_link_button" id="navigation_link_button" href="#"> English <i
+                        class="fa fa-caret-down"> </i> </button>
+                <div class="navigation_drop_down_container">
+                    <button id="navigation_dropdown_links" value="English" onclick="change_language(event)">English</button>
+                    <button id="navigation_dropdown_links" value="French" onclick="change_language(event)">Français</button>
+                    <button id="navigation_dropdown_links" value="Spanish" onclick="change_language(event)">Español</button>
+                    <button id="navigation_dropdown_links" value="German" onclick="change_language(event)">Deutsch</button>
+
+                </div>
             </div>
         </div>
-
-
-        <div class="navigation_drop_down">
-            <button class="language_navigation_link_button" id="navigation_link_button" href="#"> English <i class="fa fa-caret-down"> </i> </button>
-            <div class="navigation_drop_down_container">
-                <a id="navigation_dropdown_links" value="English">English</a>
-                <a id="navigation_dropdown_links" value="French">Français</a>
-                <a id="navigation_dropdown_links" value="Spanish">Español</a>
-                <a id="navigation_dropdown_links" value="German">Deutsch</a>
-
-            </div>
-        </div>
-
     </nav>
 </header>
 
@@ -107,7 +109,7 @@
                 <p id="current_selection_sim_details"> 1GB 7 Day Bundle</p>
             </div>
             <div id="total_price_footer_right">
-                <button id="buy_now_button"> £6.00 Buy Now </button>
+                <button id="buy_now_button"> Select eSIM </button>
             </div>
 
         </article>
@@ -183,6 +185,8 @@
 
 </footer>
 <script src="javascript/index.js"> </script>
+<script src="javascript/language.js"> </script>
+<script src="javascript/currency.js"> </script>
 <script src="javascript/frequently_asked_questions.js"> </script>
 
 </html>

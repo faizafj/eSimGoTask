@@ -64,6 +64,10 @@ function display_questions() {
         questions_title.setAttribute('id', "question_id_" + i)
         questions_title.innerText = frequently_asked_questions[i].question
         questions_title.setAttribute('class', "questions_title")
+
+        arrow_image = document.createElement('i')
+        arrow_image.setAttribute("class", "fa-solid fa-chevron-down") //adds arrow to button
+        arrow_image.style.fontSize =" 11px"
         
         questions_answer = document.createElement('p')
         questions_answer.innerText = frequently_asked_questions[i].answer
@@ -71,8 +75,10 @@ function display_questions() {
         questions_answer.setAttribute('class', "questions_answer")
         questions_answer.style.display="none"
         
+        
         //appending answer and questions to their containers, and appending to main container 
         questions_title_container.appendChild(questions_title)
+        questions_title.appendChild(arrow_image)
         questions_answer_container.appendChild(questions_answer)
 
         questions_container.appendChild(questions_title_container)
