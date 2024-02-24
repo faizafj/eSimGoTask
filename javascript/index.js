@@ -86,20 +86,25 @@ function display_bundle_options() {
         bundle_size_container.appendChild(bundle_size_image)
         bundle_size_container.appendChild(bundle_size)
 
+
+        var bundle_price_duration_container = document.createElement('article')
+        bundles_details.appendChild(bundle_price_duration_container)
+        bundle_price_duration_container.setAttribute("id", "bundle_price_duration_container")
+
         // Bundle GB price 
         var bundle_price = document.createElement('h3')
         bundle_price.setAttribute("class", "bundle_price")
         bundle_price.setAttribute('id', "bundle_id_" + i)
         price = bundle_options[i].bundle_price.toFixed(2)
         bundle_price.innerText = `£${price}`
-        bundles_details.appendChild(bundle_price)
+        bundle_price_duration_container.appendChild(bundle_price)
 
         // Bundle GB duration 
         var bundle_duration = document.createElement('p')
         bundle_duration.setAttribute("class", "bundle_duration")
         bundle_duration.setAttribute('id', "bundle_id_" + i)
         bundle_duration.innerText = bundle_options[i].duration
-        bundles_details.appendChild(bundle_duration)
+        bundle_price_duration_container.appendChild(bundle_duration)
 
     }
 }

@@ -20,10 +20,55 @@
     <link href="http://tinyurl.com/2bzcnwz5" rel="stylesheet">
 </head>
 
+
+<!-- Mobile (Hamburger) Navigation Bar -->
+<div id="mobile_navigation_links_container">
+    <div id="navigation_close_button">
+        <button id="close_button" onclick="closeNav()"><i class="fa-solid fa-x"></i></i></button>
+    </div>
+    <div id="navigation_links_inner_container">
+        <a id="navigation_link" href="#"> About Us </a>
+        <a id="navigation_link" href="#"> Device Compatibility </a>
+        <a id="navigation_link" href="#"> FAQs & Support </a>
+        <a id="navigation_link" href="#"> Login </a>
+
+    </div>
+    <article id="drop_down_links_container">
+        <div class="navigation_drop_down">
+            <button class="currency_navigation_link_button" id="navigation_link_button" href="#"> GBP £ <i
+                    class="fa fa-caret-down"> </i></button>
+            <div class="navigation_drop_down_container">
+                <button id="navigation_dropdown_links" value="gbp" onclick="change_currency(event)">GBP £</button>
+                <button id="navigation_dropdown_links" value="eur" onclick="change_currency(event)">EUR €</button>
+                <button id="navigation_dropdown_links" value="usd" onclick="change_currency(event)">USD $</button>
+                <button id="navigation_dropdown_links" value="aud" onclick="change_currency(event)">AUD $</button>
+            </div>
+        </div>
+        <div class="navigation_drop_down">
+            <button class="language_navigation_link_button" id="navigation_link_button" href="#"> English <i
+                    class="fa fa-caret-down"> </i> </button>
+            <div class="navigation_drop_down_container">
+                <button id="navigation_dropdown_links" value="English" onclick="change_language(event)">English</button>
+                <button id="navigation_dropdown_links" value="French" onclick="change_language(event)">Français</button>
+                <button id="navigation_dropdown_links" value="Spanish" onclick="change_language(event)">Español</button>
+                <button id="navigation_dropdown_links" value="German" onclick="change_language(event)">Deutsch</button>
+
+            </div>
+        </div>
+    </article>
+</div>
+
+
 <!-- Header and Navigation Bar -->
 <header class="header_container">
     <img id="header_image" src="images/usa_captiol.png" alt="USA Capitol Image">
-    <h1 id="header_title"> United States of America Travel Bundle</h1>
+    <div class="mobile_header_website_information">
+        <span id="navigation_website_logo" class="material-symbols-outlined" style="color:white; margin:0px;">
+            sim_card </span>
+        <a id="mobile_header_website_title"> eSIMs </a>
+    </div>
+    <h1 id="header_title" onclick="openNav()"> United States of America Travel Bundle</h1>
+    
     <nav class="navigation_bar">
         <div class="navigation_page_information">
             <span id="navigation_website_logo" class="material-symbols-outlined" style="color:white; margin:0px;">
@@ -67,6 +112,7 @@
             </div>
         </div>
     </nav>
+
 </header>
 
 <!-- Main Page Content -->
@@ -81,7 +127,8 @@
 
         <div class="bundle_details_information">
             <h1 class="bundle_detail_title"> Bundle Details</h1>
-            <p class="bundle_detail_description"> The United States of America Travel Bundle works in 1 country and is available
+            <p class="bundle_detail_description"> The United States of America Travel Bundle works in 1 country and is
+                available
                 in a range of data sizes.</p>
         </div>
 
@@ -142,7 +189,7 @@
                 <a id="footer_website_title"> eSIMs </a>
             </div>
 
-            <p> eSIMs provide affordable, easy to use travel bundles for SIM in over 180
+            <p id="footer_text"> eSIMs provide affordable, easy to use travel bundles for SIM in over 180
                 countries worldwide. </p>
             <div id="footer_socials_bar">
                 <a href="#" class="devicon-facebook-plain"></a>
@@ -167,7 +214,6 @@
         <div id="footer_section_one_column">
             <h1 class="footer_links_heading">Contact Us </h1>
             <a class="footer_links" href="#">Support</a>
-            <br>
             <a class="footer_links" href="#">Sales and Partner Enquiries</a>
         </div>
     </div>
@@ -194,5 +240,6 @@
 <script src="javascript/language.js"> </script>
 <script src="javascript/currency.js"> </script>
 <script src="javascript/frequently_asked_questions.js"> </script>
+<script src="javascript/mobile_navigation.js"> </script>
 
 </html>
