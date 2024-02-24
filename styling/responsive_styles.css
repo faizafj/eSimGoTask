@@ -1,0 +1,85 @@
+ /* Styling for small screens/mobiles */
+ @media only screen and (max-width: 767px) {
+
+     /* Navigation Bar */
+
+     .header_container {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+     #header_image {
+         width: 100%;
+         height: 100%;
+         border-radius: 0 0 20px 20px;
+     }
+     
+     #header_title{
+        text-align: center;
+        position: absolute;
+        left:auto; 
+        top: auto; 
+        font-size: 25px;
+        align-self: center;
+
+     }
+
+     .navigation_bar {
+         display: none;
+
+     }
+
+
+     /* Main Page Content */
+
+     .main_page_content {
+         margin: 0;
+     }
+
+     /* eSIM Bundle Details  */
+     #bundles_container {
+         display: inline;
+     }
+
+     .bundles_details{
+        margin: 0;
+     }
+
+    .bundle_recommendation{
+        margin: 0;
+     }
+
+     /* Frequently Asked Questions */
+     .frequently_asked_questions {
+         margin: 0;
+         padding: 0;
+     }
+
+     #frequently_asked_questions_grid_container {
+         display: block;
+     }
+
+          /* Footer */
+          .footer_section_one {
+            display: block;
+            padding: 0;
+        }
+   
+        .footer_section_two {
+            display: block;
+            padding: 0;
+        }
+   
+        #footer_section_two_column{
+           display: block;
+            padding: 0;
+            
+        }
+   
+        .footer_links {
+           display: block;
+       }
+
+ }

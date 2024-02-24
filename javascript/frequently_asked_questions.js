@@ -69,7 +69,7 @@ function display_questions() {
         arrow_image.setAttribute("class", "fa-solid fa-chevron-down") //adds arrow to button
         arrow_image.style.fontSize =" 11px"
         
-        questions_answer = document.createElement('p')
+        var questions_answer = document.createElement('p')
         questions_answer.innerText = frequently_asked_questions[i].answer
         questions_answer.setAttribute('id', `question_id_${i}_answer`)
         questions_answer.setAttribute('class', "questions_answer")
@@ -109,7 +109,7 @@ function display_questions() {
 
 //A function to display the answers when a question is clicked, else it hides the answer.
 function display_answer(event) {
-    question_id = event.target.id
+    var question_id = event.target.id
     console.log(question_id)
 
     answer_question_id = question_id+"_answer"
@@ -121,9 +121,9 @@ function display_answer(event) {
             questions = document.getElementById(`${answer_question_id}`)
 
             if (questions.style.display === "none"){
-                questions.style.display="block"
+                questions.style.display="block" //Display questions
             }else{
-            questions.style.display = "none"
+            questions.style.display = "none" //Hide question
             }
         }
     }

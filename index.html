@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eSims</title>
+    <title>eSIMs</title>
+    <meta name="description" content="ESIMs bundle purchasing website">
     <!-- CSS styling -->
     <link rel="stylesheet" href="styling/styles.css">
+    <link rel="stylesheet" href="styling/responsive_styles.css">
     <!-- Dev Icons -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <!-- Font Awesome Icons -->
@@ -20,7 +22,7 @@
 
 <!-- Header and Navigation Bar -->
 <header class="header_container">
-    <img id="header_image" src="images/usa_captiol.png">
+    <img id="header_image" src="images/usa_captiol.png" alt="USA Capitol Image">
     <h1 id="header_title"> United States of America Travel Bundle</h1>
     <nav class="navigation_bar">
         <div class="navigation_page_information">
@@ -52,10 +54,14 @@
                 <button class="language_navigation_link_button" id="navigation_link_button" href="#"> English <i
                         class="fa fa-caret-down"> </i> </button>
                 <div class="navigation_drop_down_container">
-                    <button id="navigation_dropdown_links" value="English" onclick="change_language(event)">English</button>
-                    <button id="navigation_dropdown_links" value="French" onclick="change_language(event)">Français</button>
-                    <button id="navigation_dropdown_links" value="Spanish" onclick="change_language(event)">Español</button>
-                    <button id="navigation_dropdown_links" value="German" onclick="change_language(event)">Deutsch</button>
+                    <button id="navigation_dropdown_links" value="English"
+                        onclick="change_language(event)">English</button>
+                    <button id="navigation_dropdown_links" value="French"
+                        onclick="change_language(event)">Français</button>
+                    <button id="navigation_dropdown_links" value="Spanish"
+                        onclick="change_language(event)">Español</button>
+                    <button id="navigation_dropdown_links" value="German"
+                        onclick="change_language(event)">Deutsch</button>
 
                 </div>
             </div>
@@ -74,14 +80,14 @@
         </div>
 
         <div class="bundle_details_information">
-            <h1 id="bundle_detail_title"> Bundle Details</h1>
-            <p id="number_of_countries"> The United States of America Travel Bundle works in 1 country and is available
+            <h1 class="bundle_detail_title"> Bundle Details</h1>
+            <p class="bundle_detail_description"> The United States of America Travel Bundle works in 1 country and is available
                 in a range of data sizes.</p>
         </div>
 
         <div class="bundle_details_information">
-            <h1 id="bundle_detail_title"> Bundle Options </h1>
-            <p id="number_of_countries"> Select one of the following bundle sizes:</p>
+            <h1 class="bundle_detail_title"> Bundle Options </h1>
+            <p class="bundle_detail_description"> Select one of the following bundle sizes:</p>
         </div>
 
         <article id="bundles_container">
@@ -89,14 +95,14 @@
         </article>
 
         <div class="bundle_details_information">
-            <h1 id="bundle_detail_title"> Compatibility</h1>
-            <p id="bundle_detail_description"> Check the <a href="#" id="embedded_text_link"> compatible devices</a>
+            <h1 class="bundle_detail_title"> Compatibility</h1>
+            <p class="bundle_detail_description"> Check the <a href="#" id="embedded_text_link"> compatible devices</a>
                 list to make sure your device is eSIM ready.
                 Your device must be unlocked to add an eSIM. </p>
         </div>
         <div class="bundle_details_information">
-            <h1 id="bundle_detail_title"> Installation </h1>
-            <p id="bundle_detail_description"> Installing an eSIM is simple. Once your purchase is complete, we will
+            <h1 class="bundle_detail_title"> Installation </h1>
+            <p class="bundle_detail_description"> Installing an eSIM is simple. Once your purchase is complete, we will
                 email instructions on how to install and activate your eSIM. You can use your bundle up to 12 months
                 from its purchase date.</p>
         </div>
@@ -146,23 +152,23 @@
             </div>
         </div>
         <div id="footer_section_one_column">
-            <h1 id="footer_links_heading">Shop</h1>
-            <a id="footer_links" href="#">Most Popular eSIM </a>
-            <a id="footer_links" href="#">Shop eSIM by Region</a>
-            <a id="footer_links" href="#">Shop SIM by Country</a>
+            <h1 class="footer_links_heading">Shop</h1>
+            <a class="footer_links" href="#">Most Popular eSIM </a>
+            <a class="footer_links" href="#">Shop eSIM by Region</a>
+            <a class="footer_links" href="#">Shop SIM by Country</a>
         </div>
         <div id="footer_section_one_column">
-            <h1 id="footer_links_heading">Info </h1>
-            <a id="footer_links" href="#">About Us </a>
-            <a id="footer_links" href="#">Frequently Asked Questions</a>
-            <a id="footer_links" href="#">Compatible Devices</a>
-            <a id="footer_links" href="#">Become an affiliate</a>
+            <h1 class="footer_links_heading">Info </h1>
+            <a class="footer_links" href="#">About Us </a>
+            <a class="footer_links" href="#">Frequently Asked Questions</a>
+            <a class="footer_links" href="#">Compatible Devices</a>
+            <a class="footer_links" href="#">Become an affiliate</a>
         </div>
         <div id="footer_section_one_column">
-            <h1 id="footer_links_heading">Contact Us </h1>
-            <a id="footer_links" href="#">Support</a>
+            <h1 class="footer_links_heading">Contact Us </h1>
+            <a class="footer_links" href="#">Support</a>
             <br>
-            <a id="footer_links" href="#">Sales and Partner Enquiries</a>
+            <a class="footer_links" href="#">Sales and Partner Enquiries</a>
         </div>
     </div>
     <div class="footer_section_two">
@@ -171,9 +177,9 @@
         </div>
 
         <div id="footer_section_two_column_links_container">
-            <a id="footer_section_two_links" href="#">Terms and Conditions</a>
-            <a id="footer_section_two_links" href="#">Privacy Policy</a>
-            <a id="footer_section_two_links" href="#">Complaints Policy</a>
+            <a class="footer_section_two_links" href="#">Terms and Conditions</a>
+            <a class="footer_section_two_links" href="#">Privacy Policy</a>
+            <a class="footer_section_two_links" href="#">Complaints Policy</a>
         </div>
     </div>
 

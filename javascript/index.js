@@ -116,17 +116,17 @@ function display_esim_selected(event) {
  
             //Updates pricing and currency on Buy Now button 
             price = bundle_options[i].bundle_price.toFixed(2) 
-            var current_button = document.getElementById(esim_id)
-            bundle_button_price = document.querySelector(`h3#${esim_id}`)
+            var bundle_button_price = document.querySelector(`h3#${esim_id}`)
             bundle_button_price = bundle_button_price.innerText 
             //Changes colour on selected bundle
+            var current_button = document.getElementById(esim_id)
             current_button.style.backgroundColor = "#F0F9FC"
             current_button.style.border = "solid 1px #008BD1"
             current_selection_sim_details.innerText =  `${bundle_button_price} - Buy Now`
         }
         else {
             //resets colouring 
-            other_button = document.getElementById("bundle_id_" + i)
+            var other_button = document.getElementById("bundle_id_" + i)
             other_button.style.backgroundColor = "white"
             other_button.style.border = "solid 0.5px #008BD1"
         }

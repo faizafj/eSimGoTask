@@ -187,10 +187,6 @@ body {
     margin-bottom: 10px;
 }
 
-.bundle_details_information > h1{
-    margin: 0;
-}
-
 .new_esim_information {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -216,21 +212,13 @@ body {
     font-weight: bold;
 }
 
-#number_of_countries {
-    margin-left: 10px;
-
-}
-
-#bundle_detail_title,
-#bundle_detail_description {
-    margin-left: 10px;
-}
-
-#bundle_detail_title {
+.bundle_detail_title {
     margin-bottom: 0;
+    margin-left: 10px;
 }
 
-#bundle_detail_description {
+.bundle_detail_description {
+    margin-left: 10px;
     margin-top: 7px;
 }
 
@@ -514,7 +502,7 @@ footer {
     font-size: 15px;
 }
 
-#footer_links {
+.footer_links {
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -552,7 +540,7 @@ footer {
     padding-bottom: 10px;
 }
 
-#footer_section_two_links {
+.footer_section_two_links {
     color: white;
     text-decoration: none;
     display: inline;
@@ -563,6 +551,6 @@ footer {
 
 }
 
-#footer_section_two_links:last-child {
+.footer_section_two_links:last-child {
     border-right: none;
 }
