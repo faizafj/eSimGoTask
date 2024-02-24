@@ -1,6 +1,6 @@
 /* Whole HTML Body */
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: sans-serif;
     margin: 0;
     font-size: 15px;
 }
@@ -10,7 +10,9 @@ body {
 /* Header and header Image */
 #mobile_navigation_links_container {
     display: none;
-
+}
+.mobile_header_website_information{
+    display: none;
 }
 
 .header_container {
