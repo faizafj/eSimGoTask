@@ -15,6 +15,8 @@ function change_currency(event) {
         localStorage.setItem('currency', '$')
         currency = "AUD $ "
     }
+
+    //Changes value of the currency drop down to be new currency
     var currency_navigation_button = document.getElementsByClassName('currency_navigation_link_button')
     var currency_change = currency_navigation_button[0];
     arrow_image = document.createElement('i')
@@ -24,18 +26,19 @@ function change_currency(event) {
     currency_change.appendChild(arrow_image)
 
 
-
+// Updates currency and pricing for each bundle.
     for (i = 0; i < bundle_options.length; i++) {
         var price_text = document.getElementsByClassName('bundle_price')
         var price_text_to_change = price_text[i];
-        price = bundle_options[i].bundle_price
-        console.log(price)
+        var price = bundle_options[i].bundle_price
         if (currency_selected === "eur") {
-            price = price + 1
-            new_price = price.toFixed(2)
+            var euros_per_pound = price * 0.17
+            price = price + euros_per_pound
+            var new_price = price.toFixed(2)
             price_text_to_change.innerText = (`€${new_price}`)
         } else if (currency_selected === "usd") {
-            price = price + 3
+            var usd_per_pound = price * 0.27
+            price = price + usd_per_pound
             new_price = price.toFixed(2)
             price_text_to_change.innerText = (`$${new_price}`)
         } else if (currency_selected === "gbp") {
@@ -43,10 +46,13 @@ function change_currency(event) {
             new_price = price.toFixed(2)
             price_text_to_change.innerText = (`£${new_price}`)
         } else if (currency_selected === "aud") {
-            price = price + 1
+            var aud_per_pound = price * 0.93
+            price = price + aud_per_pound
             new_price = price.toFixed(2)
             price_text_to_change.innerText = (`$${new_price}`)
         }
     }
+
+    select_first_bundle()
 }
 

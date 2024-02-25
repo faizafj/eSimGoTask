@@ -3,7 +3,7 @@ const frequently_asked_questions = [
         question_id: "question_id_0",
         question: "What devices are compatible with SIM?",
         answer: "The number of mobile devices that support eSIM is growing rapidly," +
-            "so it's difficult to provide an exact number. However, as of 2021, a " +
+            " so it's difficult to provide an exact number. However, as of 2021, a " +
             "large number of mobile devices from major manufacturers " +
             "such as Apple, Samsung, Google, and Microsoft support eSIM technology."
 

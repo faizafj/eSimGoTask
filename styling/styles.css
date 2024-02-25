@@ -11,7 +11,8 @@ body {
 #mobile_navigation_links_container {
     display: none;
 }
-.mobile_header_website_information{
+
+.mobile_header_website_information {
     display: none;
 }
 
@@ -67,6 +68,9 @@ body {
     width: 25px;
     height: 25px;
     padding: 5px;
+    color: white;
+    text-decoration: none;
+
 }
 
 .fa-caret-down {
@@ -78,6 +82,7 @@ body {
     font-size: 20px;
     padding: 5px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .navigation_bar #navigation_link {
@@ -108,7 +113,7 @@ body {
 
 .navigation_bar #navigation_links_container {
     display: flex;
-    width:100%;
+    width: 100%;
     justify-content: flex-end;
 
 }
@@ -475,12 +480,15 @@ footer {
 #footer_website_title {
     font-size: 25px;
     font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
 #footer_website_logo {
     font-size: 40px;
     color: white;
     padding: 0;
+    text-decoration: none;
 }
 
 .fa {

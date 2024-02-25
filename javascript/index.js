@@ -36,6 +36,12 @@ const bundle_options = [
     }
 ]
 
+function select_first_bundle(){
+    for (i = 0; i < bundle_options.length; i++) { 
+        var first_elements = document.getElementsByClassName("bundles_details")
+        first_element = first_elements[0].click()
+    }
+}
 
 //Iterates every eSIM object to format and display
 function display_bundle_options() {
@@ -107,6 +113,7 @@ function display_bundle_options() {
         bundle_price_duration_container.appendChild(bundle_duration)
 
     }
+    select_first_bundle()
 }
 
 
@@ -139,4 +146,8 @@ function display_esim_selected(event) {
 }
 
 display_bundle_options()
+
+
+
+
 
