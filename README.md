@@ -17,13 +17,9 @@ Another enhancement that using JavaScript allows, is the functions such as displ
 
 
 ## HTML Styling choices:
-
-1. Header image contrast: I had changed the contrast of the main image to make it easier to see the displayed text (United States of America Travel bundle)
-2. 
+ 
 
 ## Future plans:
 Due to time constraints, some features which I had wanted to implement were not added to the website. Those features were:
 
-### 1. Disabling the buy now button:
-Until a user selects a bundle, the buy now button should be disabled so that it doesn't continue on to the next stages with no information selected. 
 
