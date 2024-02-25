@@ -113,6 +113,7 @@ function display_bundle_options() {
         bundle_price_duration_container.appendChild(bundle_duration)
 
     }
+    //Selects the first bundle as a default
     select_first_bundle()
 }
 
