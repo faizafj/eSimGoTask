@@ -13,6 +13,9 @@ To set up this website, you need to open the index.html file using your browser.
 For your convenience, a live version of the website has also been created.
 To can access the website, use the following link: https://esimwebsite.netlify.app/
 
+### GitHub Link:
+Link to GitHub repository: https://github.com/faizafj/eSimGoTask
+
 ## Using this website:
 This website closely follows the designs of the UI wireframe provided. 
 
